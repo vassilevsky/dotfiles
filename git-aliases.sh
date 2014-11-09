@@ -1,0 +1,16 @@
+alias ds='git diff --staged'
+alias aa='git add . && git status'
+alias lp='git log --patch --stat'
+alias bb='git branch'
+alias co='git checkout'
+alias gr='git log --all --pretty=format:"%Cred%h %Cblue%ar%Creset %Cgreen%an%Creset %s %Cred%d" --graph'
+alias fxp='git commit --fixup'
+alias sv='git add . && git commit -m "`git rev-parse --abbrev-ref HEAD` save" && git push'
+alias usv='git reset HEAD~1'
+alias gdob='for branch in $(git branch --merged); do git branch -d $branch; done'
+alias um='git checkout master && git fetch --prune && gdob ; git merge origin/master'
+alias rbz='git rebase -i --autosquash'
+alias rom='um && git checkout - && rbz master'
+alias zbs='git rebase --continue'
+
+mergeof(){ git log $1..master --merges --oneline | tail -n 1 | cut -d ' ' -f 1 | xargs git show }
