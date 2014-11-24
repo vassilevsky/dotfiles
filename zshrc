@@ -48,7 +48,7 @@ alias win7='VBoxManage startvm c5b42d30-a357-4328-83c6-1c330fe1dbbb'
 export EDITOR=vim
 export LC_CTYPE=UTF-8
 export LC_ALL=ru_RU.UTF-8
-export RBENV_VERSION=2.1.4
+export RBENV_VERSION=2.1.5
 
 export PATH="$HOME/.bin:$PATH"
 
