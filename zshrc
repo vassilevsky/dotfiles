@@ -61,3 +61,5 @@ source $(brew --prefix nvm)/nvm.sh
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh --no-rehash)"
+
+export PATH="./bin:$PATH"
