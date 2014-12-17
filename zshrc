@@ -40,6 +40,7 @@ v(){vim `echo $1 | sed -e 's/:/ +/g' -e 's/\+in//g'`}
 
 # Misc. aliases
    mkcd(){mkdir -p $1 && cd $1}
+   tsh(){ssh ivasilevsky@$1 -t -- /bin/sh -c 'tmux has-session && exec tmux attach || exec tmux'}
 alias tt='t timeline'
 alias td='todo.sh'
 alias sha256='shasum -a 256'
