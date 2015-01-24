@@ -10,3 +10,5 @@
 [user]
 	name = i.vasilevskiy
 	email = i.vasilevskiy@fun-box.ru
+[filter "trimWhitespace"]
+	clean = git-stripspace
