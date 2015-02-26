@@ -29,13 +29,13 @@ alias wd='watch git diff --color'
       wdf(){watch colordiff -u $1 $2}
 alias wl='tail -f log/development.log'
 alias ws='tail -f log/sidekiq.log'
-alias upd='sudo aptitude update && sudo aptitude full-upgrade'
-alias bo='EDITOR=gvim bundle open'
+alias bi='bundle install --binstubs'
 alias mb='bundle exec middleman build --clean --verbose'
 alias ms='bundle exec middleman server'
 alias fbx="git config user.name i.vasilevskiy && git config user.email 'i.vasilevskiy@fun-box.ru'"
 alias ghx="git config user.name 'Ilya Vassilevsky' && git config user.email 'vassilevsky@gmail.com'"
 alias veu='veye projects update rubygem_gemfile_lock_1 Gemfile.lock'
+alias rrr='rubocop --fail-fast --display-cop-names `git diff --name-only master | grep .rb`'
 v(){vim `echo $1 | sed -e 's/:/ +/g' -e 's/\+in//g'`}
 
 # Misc. aliases
