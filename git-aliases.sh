@@ -8,7 +8,7 @@ alias gr='git log --all --pretty=format:"%Cred%h %Cblue%ar%Creset %Cgreen%an%Cre
 alias fxp='git commit --fixup'
 alias sv='git add . && git commit -m "`git rev-parse --abbrev-ref HEAD` save" && git push'
 alias usv='git reset HEAD~1'
-alias gdob='for branch in $(git branch --merged); do git branch -d $branch; done'
+alias gdob='for branch in $(git branch --merged | grep -v master); do git branch -d $branch; done'
 alias um='git checkout master && git fetch --prune && gdob ; git merge origin/master'
 alias rbz='git rebase -i --autosquash'
 alias rom='um && git checkout - && rbz master'
