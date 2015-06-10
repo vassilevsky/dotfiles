@@ -46,9 +46,6 @@ alias td='todo.sh'
 alias sha256='shasum -a 256'
 alias win7='VBoxManage startvm c5b42d30-a357-4328-83c6-1c330fe1dbbb'
 
-BASE16_SHELL="$HOME/dist/base16-shell/base16-default.light.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-
 export EDITOR=vim
 export LC_CTYPE=UTF-8
 export LC_ALL=ru_RU.UTF-8
