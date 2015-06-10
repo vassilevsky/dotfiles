@@ -13,5 +13,7 @@ alias um='git checkout master && git fetch --prune && gdob ; git merge origin/ma
 alias rbz='git rebase -i --autosquash'
 alias rom='um && git checkout - && rbz master'
 alias zbs='git rebase --continue'
+alias nah='git rebase --skip'
+alias nvm='git rebase --abort'
 
 mergeof(){ git log $1..master --merges --oneline | tail -n 1 | cut -d ' ' -f 1 | xargs git show }
