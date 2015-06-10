@@ -35,7 +35,7 @@ alias ms='bundle exec middleman server'
 alias fbx="git config user.name i.vasilevskiy && git config user.email 'i.vasilevskiy@fun-box.ru'"
 alias ghx="git config user.name 'Ilya Vassilevsky' && git config user.email 'vassilevsky@gmail.com'"
 alias veu='veye projects update rubygem_gemfile_lock_1 Gemfile.lock'
-alias rrr='rubocop --fail-fast --display-cop-names `git diff --name-only master | grep .rb`'
+alias rrr='rubocop -a --display-cop-names $(git diff --name-only --diff-filter=ACMR master | grep .rb)'
 v(){vim `echo $1 | sed -e 's/:/ +/g' -e 's/\+in//g'`}
 
 # Misc. aliases
