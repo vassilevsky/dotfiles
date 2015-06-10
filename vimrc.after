@@ -1,5 +1,4 @@
-let base16colorspace=256
-colorscheme base16-default
+colorscheme Tomorrow
 
 set scrolloff=3
 
