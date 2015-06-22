@@ -40,7 +40,6 @@ export EDITOR=vim
 export LC_CTYPE=UTF-8
 export LC_ALL=ru_RU.UTF-8
 
-export RBENV_VERSION=2.2.2
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh --no-rehash)"
 
