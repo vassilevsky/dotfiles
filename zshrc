@@ -24,9 +24,17 @@ alias bi='bundle install --binstubs'
 alias mb='middleman build --clean --verbose'
 alias ms='middleman server'
 
-mkcd(){mkdir -p $1 && cd $1}
-cln(){git clone $1 && cd $(basename $1)}
-v(){vim `echo $1 | sed -e 's/:/ +/g' -e 's/\+in//g'`}
+mkcd() {
+  mkdir -p $1 && cd $1
+}
+
+cln() {
+  git clone $1 && cd ${1:t:r}
+}
+
+v() {
+  vim $(echo $1 | sed -e 's/:/ +/g' -e 's/\+in//g')
+}
 
 export EDITOR=vim
 export LC_CTYPE=UTF-8
