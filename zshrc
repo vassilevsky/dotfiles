@@ -44,3 +44,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh --no-rehash)"
 
 export PATH="./bin:$PATH"
+
+export GOPATH=$HOME/gopath
+export PATH=$PATH:$GOPATH/bin
