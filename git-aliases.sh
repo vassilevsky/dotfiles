@@ -13,6 +13,7 @@ alias gdob='for branch in $(git branch --merged | grep -v master); do git branch
 alias um='git checkout master && git fetch --prune && gdob ; git merge origin/master'
 alias rbz='git rebase -i --autosquash'
 alias rom='um && git checkout - && rbz master'
+alias rod='git checkout develop && git pull && git checkout - && rbz develop'
 alias zbs='git rebase --continue'
 alias nah='git rebase --skip'
 alias nvm='git rebase --abort'
