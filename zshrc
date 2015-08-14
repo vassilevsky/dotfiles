@@ -47,5 +47,6 @@ eval "$(thefuck-alias)"
 
 export PATH="./bin:$PATH"
 
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=$HOME/gopath
 export PATH=$PATH:$GOPATH/bin
