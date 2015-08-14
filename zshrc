@@ -43,6 +43,8 @@ export LC_ALL=ru_RU.UTF-8
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh --no-rehash)"
 
+eval "$(thefuck-alias)"
+
 export PATH="./bin:$PATH"
 
 export GOPATH=$HOME/gopath
