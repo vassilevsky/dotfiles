@@ -12,3 +12,5 @@ set splitright
 
 nmap <silent> <leader>d <Plug>DashSearch
 nmap <silent> <leader>dg <Plug>DashGlobalSearch
+
+autocmd BufWritePre * :%s/\s\+$//e
