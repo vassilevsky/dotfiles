@@ -36,6 +36,10 @@ v() {
   vim $(echo $1 | sed -e 's/:/ +/g' -e 's/\+in//g')
 }
 
+sst() {
+  ssh -t $1 "tmux new -A -s $1"
+}
+
 export EDITOR=vim
 export LC_CTYPE=UTF-8
 export LC_ALL=ru_RU.UTF-8
