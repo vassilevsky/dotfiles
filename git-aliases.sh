@@ -11,6 +11,7 @@ alias sv='git add . && git commit -m "`git rev-parse --abbrev-ref HEAD` save" &&
 alias usv='git reset HEAD~1'
 alias gdob='for branch in $(git branch --merged | grep -v master); do git branch -d $branch; done'
 alias um='git checkout master && git fetch --prune && gdob ; git merge origin/master'
+alias ud='git checkout develop && git fetch --prune && gdob ; git merge origin/develop'
 alias rbz='git rebase -i --autosquash'
 alias rom='um && git checkout - && rbz master'
 alias rod='git checkout develop && git pull && git checkout - && rbz develop'
