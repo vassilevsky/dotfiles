@@ -15,6 +15,7 @@ alias ud='git checkout develop && git fetch --prune && gdob ; git merge origin/d
 alias rbz='git rebase -i --autosquash'
 alias rom='um && git checkout - && rbz master'
 alias rod='git checkout develop && git pull && git checkout - && rbz develop'
+alias tfx='git commit --message=typofix && git pull --rebase && git push'
 alias zbs='git rebase --continue'
 alias nah='git rebase --skip'
 alias nvm='git rebase --abort'
