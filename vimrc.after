@@ -14,3 +14,4 @@ nmap <silent> <leader>d <Plug>DashSearch
 nmap <silent> <leader>dg <Plug>DashGlobalSearch
 
 autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufRead,BufNewFile config/nginx/*.conf set filetype=nginx
