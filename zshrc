@@ -44,6 +44,10 @@ ymlfmt() {
   ruby -r yaml -e "File.write('$1', YAML.dump(YAML.load_file('$1')))"
 }
 
+mkpr() {
+  stash pull-request ${2:-develop} @e.strokov @d.efimov @v.promzelev @m.stolbov --title "$1" --open
+}
+
 export EDITOR=vim
 export LC_CTYPE=UTF-8
 export LC_ALL=ru_RU.UTF-8
