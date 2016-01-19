@@ -53,7 +53,7 @@ export LC_CTYPE=UTF-8
 export LC_ALL=ru_RU.UTF-8
 
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - zsh --no-rehash)"
+eval "$(rbenv init -)"
 
 eval "$(thefuck --alias)"
 
