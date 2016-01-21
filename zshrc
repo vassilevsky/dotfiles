@@ -45,7 +45,11 @@ ymlfmt() {
 }
 
 mkpr() {
-  stash pull-request ${2:-develop} @e.strokov @d.efimov @v.promzelev @m.stolbov --title "$1" --open
+  stash pull-request ${2:-develop} $(cat ~/funbox/TEAM) --title "$1" --open
+}
+
+rlz() {
+  stash pull-request develop master $(cat ~/funbox/TEAM) --title "Release $1" --description 'Последний шанс найти проблемы перед релизом' --open
 }
 
 export EDITOR=vim
