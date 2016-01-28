@@ -45,10 +45,22 @@ ymlfmt() {
 }
 
 mkpr() {
+  if [[ -z $1 ]]
+  then
+    echo "mkpr TITLE"
+    exit 1
+  fi
+
   stash pull-request ${2:-develop} $(cat ~/funbox/TEAM) --title "$1" --open
 }
 
 rlz() {
+  if [[ -z $1 ]]
+  then
+    echo "rlz VERSION"
+    exit 1
+  fi
+
   stash pull-request develop master $(cat ~/funbox/TEAM) --title "Release $1" --description 'Последний шанс найти проблемы перед релизом' --open
 }
 
