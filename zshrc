@@ -20,7 +20,7 @@ alias ghx="git config user.name 'Ilya Vassilevsky' && git config user.email 'vas
 
 alias rrr='rubocop -a --display-cop-names $(git diff --name-only --diff-filter=ACMR master | grep .rb)'
 alias cfmt='git commit -m "форматирование кода"'
-alias bi='bundle install --binstubs'
+alias bi='bundle install --jobs 8 --binstubs'
 alias mb='middleman build --clean --verbose'
 alias ms='middleman server'
 
