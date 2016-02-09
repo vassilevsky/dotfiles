@@ -33,7 +33,7 @@ cln() {
 }
 
 v() {
-  vim $(echo $1 | sed -e 's/:/ +/g' -e 's/\+in//g')
+  vim $(echo $1 | sed -E 's/:([0-9]+):in/ +\1/')
 }
 
 sst() {
