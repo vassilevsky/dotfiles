@@ -71,8 +71,6 @@ export LC_ALL=ru_RU.UTF-8
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-eval "$(thefuck --alias)"
-
 export PATH="./bin:$PATH"
 
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
