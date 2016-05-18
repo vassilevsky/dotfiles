@@ -18,7 +18,7 @@ export PROMPT='%B%T%b %~`git-prompt`%(!.#.$) '
 alias fbx="git config user.name i.vasilevskiy && git config user.email 'i.vasilevskiy@fun-box.ru'"
 alias ghx="git config user.name 'Ilya Vassilevsky' && git config user.email 'vassilevsky@gmail.com'"
 
-alias rrr='rubocop -a --display-cop-names $(git diff --name-only --diff-filter=ACMR master | grep .rb)'
+alias rrr='rubocop -a --display-cop-names $(git diff --name-only --diff-filter=ACMR develop | grep .rb)'
 alias cfmt='git commit -m "форматирование кода"'
 alias bi='bundle install --jobs 8 --binstubs'
 alias mb='middleman build --clean --verbose'
