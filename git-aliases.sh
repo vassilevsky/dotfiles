@@ -18,6 +18,6 @@ alias rod='git checkout develop && git pull && git checkout - && rbz develop'
 alias tfx='git commit --message=typofix && git pull --rebase && git push'
 alias zbs='git rebase --continue'
 alias nah='git rebase --skip'
-alias nvm='git rebase --abort'
+alias omg='git rebase --abort'
 
 mergeof(){ git log $1..master --merges --oneline | tail -n 1 | cut -d ' ' -f 1 | xargs git show }

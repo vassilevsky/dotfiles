@@ -77,3 +77,6 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=$HOME/gopath
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/sbin
+
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
