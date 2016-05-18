@@ -58,7 +58,7 @@ rlz() {
   if [[ -z $1 ]]
   then
     echo "rlz VERSION"
-    exit 1
+    return 1
   fi
 
   stash pull-request develop master $(cat ~/funbox/TEAM) --title "Release $1" --description 'Последний шанс найти проблемы перед релизом' --open
