@@ -68,15 +68,12 @@ export EDITOR=vim
 export LC_CTYPE=UTF-8
 export LC_ALL=ru_RU.UTF-8
 
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+export PATH=$PATH:$HOME/.rbenv/bin:/usr/local/go/bin:/usr/local/opt/go/libexec/bin:$HOME/gopath/bin
+
 eval "$(rbenv init -)"
-
-export PATH="./bin:$PATH"
-
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export GOPATH=$HOME/gopath
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:/usr/local/sbin
 
 export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
+
+export PATH="./bin:$PATH"
