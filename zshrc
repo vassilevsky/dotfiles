@@ -59,9 +59,9 @@ rlz() {
   then
     echo "rlz VERSION"
     return 1
+  else
+    stash pull-request develop master $(cat ~/funbox/TEAM) --title "Release $1" --description 'Последний шанс найти проблемы перед релизом' --open
   fi
-
-  stash pull-request develop master $(cat ~/funbox/TEAM) --title "Release $1" --description 'Последний шанс найти проблемы перед релизом' --open
 }
 
 export EDITOR=vim
