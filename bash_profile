@@ -1,11 +1,56 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
 export EDITOR=vim
+
+v() {
+  vim $(echo $1 | sed -E 's/:([0-9]+):in/ +\1/')
+}
+
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
+
 export PATH="$HOME/.ndenv/bin:$PATH"
 eval "$(ndenv init -)"
+
 export PATH=./bin:$PATH
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PROMPT_COMMAND='echo -ne "\033]0;$(basename ${PWD/$HOME/\~})\007"'
-export PS1=' ${PWD/$HOME/~} $(test -d .git && git rev-parse --abbrev-ref HEAD) $ '
+export PS1=' ${PWD/$HOME/~} \e[35m$(test -d .git && git rev-parse --abbrev-ref HEAD)\e[0m $ '
+
+alias ghx="git config user.name 'Ilya Vassilevsky' && git config user.email 'vassilevsky@gmail.com'"
+alias rrr='rubocop -a --display-cop-names $(git diff --name-only --diff-filter=ACMR develop | grep .rb)'
+alias bi='bundle install --jobs 8 --binstubs'
+
+mkcd() {
+  mkdir -p $1 && cd $1
+}
+
+cln() {
+  git clone $1 && cd "$(echo "$(basename $1)" | sed 's/\.git$//')"
+}
+
+alias s='git status'
+alias co='git checkout'
+alias d='git diff'
+alias ds='git diff --staged'
+alias a='git add --patch'
+alias aa='git add . && git status'
+alias u='git reset HEAD'
+alias c='git commit'
+alias lp='git log --patch --stat'
+alias lo='git log --graph --oneline --decorate'
+alias bb='git branch'
+
+alias rbz='git rebase -i --autosquash'
+alias zbs='git rebase --continue'
+alias nah='git rebase --abort'
+
+alias mrg='git merge --no-ff'
+
+alias um='git checkout master  && git fetch --prune && git merge origin/master'
+alias ud='git checkout develop && git fetch --prune && git merge origin/develop'
+alias rom='um && git checkout - && rbz master'
+alias rod='ud && git checkout - && rbz develop'
+
 source "$HOME/.iterm2_shell_integration.bash"
