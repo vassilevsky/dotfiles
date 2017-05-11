@@ -15,12 +15,11 @@ eval "$(pyenv init -)"
 export PATH="$HOME/.ndenv/bin:$PATH"
 eval "$(ndenv init -)"
 
-export PATH=./bin:$PATH
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 alias ghx="git config user.name 'Ilya Vassilevsky' && git config user.email 'vassilevsky@gmail.com'"
 alias rrr='rubocop -a --display-cop-names $(git diff --name-only --diff-filter=ACMR develop | grep .rb)'
-alias bi='bundle install --jobs 8 --binstubs'
+alias bi='bundle install --jobs 8'
 
 mkcd() {
   mkdir -p $1 && cd $1
