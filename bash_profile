@@ -1,3 +1,5 @@
+source ~/.bash-powerline.sh
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
@@ -15,8 +17,6 @@ eval "$(ndenv init -)"
 
 export PATH=./bin:$PATH
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export PROMPT_COMMAND='echo -ne "\033]0;$(basename ${PWD/$HOME/\~})\007"'
-export PS1=' ${PWD/$HOME/~} \e[35m$(test -d .git && git rev-parse --abbrev-ref HEAD)\e[0m $ '
 
 alias ghx="git config user.name 'Ilya Vassilevsky' && git config user.email 'vassilevsky@gmail.com'"
 alias rrr='rubocop -a --display-cop-names $(git diff --name-only --diff-filter=ACMR develop | grep .rb)'
@@ -52,5 +52,3 @@ alias um='git checkout master  && git fetch --prune && git merge origin/master'
 alias ud='git checkout develop && git fetch --prune && git merge origin/develop'
 alias rom='um && git checkout - && rbz master'
 alias rod='ud && git checkout - && rbz develop'
-
-source "$HOME/.iterm2_shell_integration.bash"
