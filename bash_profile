@@ -21,6 +21,9 @@ alias ghx="git config user.name 'Ilya Vassilevsky' && git config user.email 'vas
 alias rrr='rubocop -a --display-cop-names $(git diff --name-only --diff-filter=ACMR develop | grep .rb)'
 alias bi='bundle install --jobs 8'
 alias rc='bundle exec rails console'
+alias st='ssh-add && bundle exec cap staging deploy'
+alias s1='ssh-add && bundle exec cap staging1 deploy'
+alias s2='ssh-add && bundle exec cap staging2 deploy'
 
 mkcd() {
   mkdir -p $1 && cd $1
