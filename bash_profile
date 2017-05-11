@@ -20,6 +20,7 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 alias ghx="git config user.name 'Ilya Vassilevsky' && git config user.email 'vassilevsky@gmail.com'"
 alias rrr='rubocop -a --display-cop-names $(git diff --name-only --diff-filter=ACMR develop | grep .rb)'
 alias bi='bundle install --jobs 8'
+alias rc='bundle exec rails console'
 
 mkcd() {
   mkdir -p $1 && cd $1
