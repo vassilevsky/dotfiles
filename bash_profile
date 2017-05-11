@@ -17,6 +17,8 @@ eval "$(ndenv init -)"
 
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
+. /usr/local/etc/bash_completion
+
 alias ghx="git config user.name 'Ilya Vassilevsky' && git config user.email 'vassilevsky@gmail.com'"
 alias rrr='rubocop -a --display-cop-names $(git diff --name-only --diff-filter=ACMR develop | grep .rb)'
 alias bi='bundle install --jobs 8'
