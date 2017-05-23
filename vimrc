@@ -20,6 +20,11 @@ set scrolloff=3
 set splitbelow
 set splitright
 
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufRead,BufNewFile config/nginx/*.conf set filetype=nginx
 autocmd BufRead,BufNewFile Procfile* set filetype=yaml
