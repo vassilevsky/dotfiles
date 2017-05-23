@@ -27,6 +27,7 @@ alias st='ssh-add && bundle exec cap staging deploy'
 alias s1='ssh-add && bundle exec cap staging1 deploy'
 alias s2='ssh-add && bundle exec cap staging2 deploy'
 alias scp='scp -C'
+alias ll='ls -lah'
 
 mkcd() {
   mkdir -p $1 && cd $1
