@@ -11,7 +11,6 @@ Plug 'tpope/vim-surround'
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
 Plug 'jnurmine/Zenburn'
 Plug 'chr4/nginx.vim', { 'for': 'nginx' }
-Plug 'wincent/terminus'
 call plug#end()
 
 let g:ctrlp_map = '<c-p>'
