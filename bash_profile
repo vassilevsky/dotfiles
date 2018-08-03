@@ -30,8 +30,6 @@ alias rod='ud && git checkout - && rbz develop'
 v() { vim "$(echo "$1" | sed -E 's/:([0-9]+):in/ +\1/')"; }
 cln() { git clone "$1" && cd "$(basename "$1" | sed 's/\.git$//')" || return; }
 
-eval "$(rbenv init -)"
-
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export EDITOR=vim
