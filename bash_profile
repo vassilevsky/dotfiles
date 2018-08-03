@@ -1,8 +1,8 @@
 #!/bin/bash
 
 source /usr/local/etc/bash_completion
+source ~/Dropbox/etc/.bash-powerline.sh
 source /usr/local/opt/asdf/asdf.sh
-source ~/.bash-powerline.sh
 
 alias ghx="git config user.name 'Ilya Vassilevsky' && git config user.email 'vassilevsky@gmail.com'"
 alias scp='scp -C'
