@@ -1,7 +1,7 @@
 alias ds='git diff --staged'
 alias dsc='git diff --staged --color-words'
 alias aa='git add . && git status'
-alias lp='git log --patch --stat'
+alias lp='git log --patch --stat --decorate'
 alias lo='git log --graph --oneline --decorate'
 alias bb='git branch'
 alias co='git checkout'
