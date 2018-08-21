@@ -69,7 +69,6 @@ export LC_CTYPE=UTF-8
 export LC_ALL=ru_RU.UTF-8
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
-export PATH=$PATH:$HOME/.rbenv/bin:/usr/local/go/bin:/usr/local/opt/go/libexec/bin:$HOME/gopath/bin
 
 eval "$(rbenv init -)"
 
