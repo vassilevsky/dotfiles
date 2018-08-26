@@ -16,3 +16,6 @@
 	required = true
 [diff]
 	compactionHeuristic = true
+[user]
+	name = i.vasilevskiy
+	email = i.vasilevskiy@fun-box.ru
