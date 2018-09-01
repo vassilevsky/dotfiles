@@ -1,17 +1,17 @@
 call plug#begin('~/.vim/bundle')
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'mileszs/ack.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'kylef/apiblueprint.vim', { 'for': 'apiblueprint' }
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tpope/vim-rails', { 'for': 'ruby' }
-Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
+Plug 'vim-airline/vim-airline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mileszs/ack.vim'
+Plug 'kylef/apiblueprint.vim', { 'for': 'apiblueprint' }
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
-Plug 'jnurmine/Zenburn'
 Plug 'chr4/nginx.vim', { 'for': 'nginx' }
 call plug#end()
+
+let g:plug_threads = 1
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
