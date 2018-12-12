@@ -10,6 +10,7 @@ Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
 Plug 'chr4/nginx.vim', { 'for': 'nginx' }
+Plug 'chriskempson/vim-tomorrow-theme'
 call plug#end()
 
 let g:plug_threads = 1
@@ -21,6 +22,8 @@ set tabstop=2 shiftwidth=2 expandtab
 set scrolloff=3
 set splitbelow
 set splitright
+
+colorscheme Tomorrow
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
