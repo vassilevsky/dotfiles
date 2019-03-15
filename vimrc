@@ -23,6 +23,7 @@ set tabstop=2 shiftwidth=2 expandtab
 set scrolloff=3
 set splitbelow
 set splitright
+set nowrap
 
 colorscheme Tomorrow
 
