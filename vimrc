@@ -10,6 +10,7 @@ Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
 Plug 'chr4/nginx.vim', { 'for': 'nginx' }
+Plug 'nathanielc/vim-tickscript', { 'for': 'tick' }
 Plug 'chriskempson/vim-tomorrow-theme'
 call plug#end()
 
@@ -36,6 +37,7 @@ autocmd BufRead,BufNewFile config/nginx/*.conf set filetype=nginx
 
 let g:ackprg = 'ag --vimgrep'
 let g:ack_autofold_results = 1
+let g:tick_fmt_autosave = 0
 
 " https://kinbiko.com/vim/my-shiniest-vim-gems/
 match ErrorMsg '\%>120v.\+'
