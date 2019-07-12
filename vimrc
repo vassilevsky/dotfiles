@@ -6,7 +6,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'kylef/apiblueprint.vim', { 'for': 'apiblueprint' }
 Plug 'elixir-editors/vim-elixir'
-Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
 Plug 'chr4/nginx.vim', { 'for': 'nginx' }
