@@ -31,6 +31,7 @@ alias explico='bundle exec explico'
 
 v() { vim $(echo "$1" | sed -E 's/:([0-9]+):.*/ +\1/'); }
 cln() { git clone "$1" && cd "$(basename "$1" | sed 's/\.git$//')" || return; }
+to() { bundle exec explico deploy $1 --branch=$(git rev-parse --abbrev-ref HEAD); }
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
