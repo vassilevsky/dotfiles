@@ -24,7 +24,7 @@ set splitbelow
 set splitright
 set nowrap
 
-colorscheme Tomorrow
+colorscheme Tomorrow-Night
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
