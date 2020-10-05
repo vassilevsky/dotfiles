@@ -36,7 +36,6 @@ autocmd BufRead,BufNewFile Procfile* set filetype=yaml
 autocmd BufRead,BufNewFile config/nginx/*.conf set filetype=nginx
 
 let g:ackprg = 'ag --vimgrep'
-let g:ack_autofold_results = 1
 let g:tick_fmt_autosave = 0
 
 " https://kinbiko.com/vim/my-shiniest-vim-gems/
