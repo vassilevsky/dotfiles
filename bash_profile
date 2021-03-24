@@ -37,4 +37,4 @@ on() { ssh -t app$1.fun-box.ru tmux attach; }
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export EDITOR=vim
-export PATH=$HOME/go/bin:$PATH
+export PATH=$HOME/Dropbox/bin:$PATH
