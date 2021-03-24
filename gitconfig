@@ -19,3 +19,5 @@
 [user]
 	name = i.vasilevskiy
 	email = i.vasilevskiy@fun-box.ru
+[pull]
+	rebase = true
