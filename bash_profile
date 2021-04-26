@@ -31,7 +31,7 @@ alias explico='bundle exec explico'
 
 v() { vim $(echo "$1" | sed -E 's/:([0-9]+):.*/ +\1/'); }
 cln() { git clone "$1" && cd "$(basename "$1" | sed 's/\.git$//')" || return; }
-to() { bundle exec explico deploy $1 --branch=$(git rev-parse --abbrev-ref HEAD) $2 $3; }
+st() { bundle exec explico deploy staging --branch=$(git rev-parse --abbrev-ref HEAD) --env="RAILS_MASTER_KEY=$(cat config/credentials/staging.key)" $2 $3; }
 on() { ssh -t app$1.fun-box.ru tmux attach; }
 
 export LC_ALL=en_US.UTF-8
