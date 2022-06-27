@@ -4,6 +4,8 @@ source /usr/local/etc/bash_completion
 source ~/Dropbox/etc/.bash-powerline.sh
 source /usr/local/opt/asdf/asdf.sh
 
+shopt -s dotglob
+
 alias ghx="git config user.name 'Ilya Vassilevsky' && git config user.email 'vassilevsky@gmail.com'"
 alias scp='scp -C'
 alias ll='ls -lah'
